@@ -1,0 +1,102 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  background: hsl(0, 0%, 98%);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  height: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111517;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #111517;
+  margin-bottom: 16px;
+}
+
+span {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+  margin-bottom: 8px;
+}
+
+p {
+
+  font-weight: 300;
+}
+
+header span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #111517;
+}
+
+header button {
+  display: flex;
+  gap: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.moon {
+  width: 16px;
+  height: 16px;
+}

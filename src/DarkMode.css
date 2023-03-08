@@ -1,0 +1,12 @@
+.darkMode header {
+  background: #2b3844;
+}
+
+.darkMode h1,
+.darkMode header span {
+  color: #ffffff;
+}
+
+.darkMode header img {
+  filter: brightness(0) invert(1);
+}
