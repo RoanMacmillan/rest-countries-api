@@ -9,7 +9,7 @@ select {
   font-size: 12px;
   line-height: 20px;
   color: #111517;
-  border-right: 19px solid transparent;
+  border-right: 15px solid transparent;
   width: 200px;
   cursor: pointer;
 }
