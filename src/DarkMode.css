@@ -1,12 +1,49 @@
 .darkMode header {
   background: #2b3844;
+  
 }
 
 .darkMode h1,
-.darkMode header span {
+.darkMode header span,
+.darkMode span,
+.darkMode h2,
+.darkMode .searchBar input,
+.darkMode p {
   color: #ffffff;
 }
 
 .darkMode header img {
   filter: brightness(0) invert(1);
+}
+
+.darkMode main {
+  background: hsl(207, 26%, 17%);
+}
+
+.darkMode .countryCard,
+.darkMode .searchBar,
+.darkMode .searchBar input,
+.darkMode select {
+  background: #2b3844;
+  color: white;
+}
+
+.darkMode.App {
+
+  background: hsl(207, 26%, 17%);
+}
+ 
+
+.darkMode .backBtn,
+.darkMode .borderCountries button {
+
+  background: #2B3844;
+  color: white;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+}
+
+.darkMode .countryInfo h1,
+.darkMode .countryInfo p {
+
+  color: white;
 }

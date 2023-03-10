@@ -23,7 +23,7 @@
 .searchBar input {
   height: 20px;
   border: none;
-  width: 70%;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -39,12 +39,21 @@
   color: #c4c4c4;
 }
 
-
 @media screen and (min-width: 678px) {
-
   .searchBar {
     margin-left: unset;
     margin-right: unset;
     max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .searchBar {
+    height: 56px;
+    width: 480px;
+  }
+
+  .searchBar input {
+    font-size: 14px;
   }
 }

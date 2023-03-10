@@ -8,14 +8,19 @@ const Home = () => {
   const [countries, setCountries] = useState([]);
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [hasResults, setHasResults] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
   const regionOptions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 
   useEffect(() => {
+    setIsLoading(true); // sets loading state before fetching data
     fetch("https://restcountries.com/v2/all")
       .then((response) => response.json())
       .then((data) => {
         setCountries(data);
         setFilteredCountries(data);
+        setIsLoading(false); // sets loading state to false after data is fetched
       });
   }, []);
 
@@ -26,6 +31,7 @@ const Home = () => {
     );
 
     setFilteredCountries(filtered);
+    setHasResults(filtered.length > 0);
   };
 
   const handleFilterChange = (region) => {
@@ -50,7 +56,17 @@ const Home = () => {
         />
       </div>
 
-      <CountryCard countries={filteredCountries} />
+      {isLoading ? ( // check loading state before rendering content
+        <div className="loadingContainer">
+          <span className="loader"></span>
+        </div>
+      ) : hasResults ? (
+        <CountryCard countries={filteredCountries} />
+      ) : (
+        <div className="errorContainer">
+          <p className="errorMsg">No countries found</p>
+        </div>
+      )}
     </main>
   );
 };

@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+  
 }
 
 /* dark mode user-agent-styles */
@@ -29,7 +30,9 @@ body {
 
 .App {
   min-height: 100vh;
+  
 }
+
 
 /* responsive images/videos */
 img,
@@ -41,14 +44,22 @@ video {
 }
 
 header {
+  
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.headerWrapper {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
   height: 80px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -77,8 +88,12 @@ span {
 }
 
 p {
-
   font-weight: 300;
+}
+
+a {
+
+  text-decoration: none !important;
 }
 
 header span {
@@ -99,4 +114,58 @@ header button {
 .moon {
   width: 16px;
   height: 16px;
+}
+
+@media screen and (min-width: 678px) {
+
+.headerWrapper {
+
+  width: 568px;
+}
+
+
+h1 {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+header span {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+}
+ 
+}
+
+@media screen and (min-width: 982px) {
+
+
+
+  .headerWrapper {
+
+    width: 872px;
+  }
+ 
+
+}
+@media screen and (min-width: 1286px) {
+
+
+.headerWrapper {
+
+  width: 1176px;
+}
+}
+
+
+@media screen and (min-width: 1440px) {
+
+  .headerWrapper {
+
+    width: 1280px;
+  }
 }

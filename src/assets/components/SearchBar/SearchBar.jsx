@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 import SearchIcon from "../../images/search.svg";
 const SearchBar = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
     onSearch(event.target.value);

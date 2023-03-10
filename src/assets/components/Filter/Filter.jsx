@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import './Filter.css';
+import "./Filter.css";
 
 const Filter = ({ onFilterChange, regionOptions }) => {
-  const [selectedRegion, setSelectedRegion] = useState('');
+  const [selectedRegion, setSelectedRegion] = useState("");
 
   const handleFilterChange = (event) => {
     setSelectedRegion(event.target.value);

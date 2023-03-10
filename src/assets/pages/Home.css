@@ -1,70 +1,87 @@
 .searchFilterContainer {
-
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 32px;
-    
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
+/* loader / error */
+
+.errorContainer,
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.errorMsg {
+  font-weight: 500;
+  font-size: 1.4rem;
+  
+}
+
+.loaderContainer {
+
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgb(211, 211, 211);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
 @media screen and (min-width: 678px) {
-
-
-    .searchFilterContainer {
-
+  .searchFilterContainer {
     flex-direction: row;
     justify-content: space-between;
     width: 568px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-
-
-    }
-
+    gap: 40px;
+  }
 }
 
-
 @media screen and (min-width: 982px) {
-
-    .searchFilterContainer {
-
-        width: 872px;
-    }
+  .searchFilterContainer {
+    width: 872px;
+  }
 }
 
 @media screen and (min-width: 1286px) {
-
-    .searchFilterContainer {
-
-        width: 1176px;
-    }
+  .searchFilterContainer {
+    width: 1176px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-
-    .searchFilterContainer {
-
-        width: 1281px;
-    }
-}
-
-
-@media screen and (min-width: 1730px) {
-
-    .searchFilterContainer {
-
-        width: 1620px;
-    }
-}
-
-
-@media screen and (min-width: 2069px) {
-
   .searchFilterContainer {
-
-    justify-content: center;
+    width: 1280px;
+    margin-bottom: 48px;
+    padding-top: 24px;
   }
 }
+
+
