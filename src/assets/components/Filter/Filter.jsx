@@ -12,7 +12,7 @@ const Filter = ({ onFilterChange, regionOptions }) => {
   return (
     <div className="filterContainer">
       <label htmlFor='filter'></label>
-      <select id="filter" value={selectedRegion} onChange={handleFilterChange}>
+      <select aria-label="filter" id="filter" value={selectedRegion} onChange={handleFilterChange}>
         <option value="">Filter by Region</option>
 
         {regionOptions.map((region) => (

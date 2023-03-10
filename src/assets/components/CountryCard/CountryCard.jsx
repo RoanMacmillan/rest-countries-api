@@ -14,11 +14,11 @@ const CountryCard = ({ countries }) => {
 
             <div className="infoContainer">
               <h2>{country.name}</h2>
-              <p>Population: {country.population}</p>
+              <p>Population: <span>{country.population}</span></p>
 
-              <p>Region: {country.region}</p>
+              <p>Region: <span>{country.region}</span></p>
 
-              <p>Capital: {country.capital}</p>
+              <p>Capital: <span>{country.capital}</span></p>
             </div>
           </div>
         </Link>

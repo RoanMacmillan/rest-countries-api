@@ -80,7 +80,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-span {
+p {
   display: flex;
   gap: 3px;
   font-weight: 600;
@@ -90,7 +90,7 @@ span {
   margin-bottom: 8px;
 }
 
-p {
+span {
   font-weight: 300;
 }
 
