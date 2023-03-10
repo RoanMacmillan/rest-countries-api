@@ -21,7 +21,7 @@ const CountryCard = ({ countries }) => {
           <div className="infoContainer">
             <h2>{country.name}</h2>
             <p>
-              Population: <p>{country.population}</p>
+              Population: <span>{country.population}</span>
             </p>
             <p>
               Region: <p>{country.region}</p>
