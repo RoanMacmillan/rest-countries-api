@@ -11,7 +11,8 @@ const Filter = ({ onFilterChange, regionOptions }) => {
 
   return (
     <div className="filterContainer">
-      <select value={selectedRegion} onChange={handleFilterChange}>
+      <label htmlFor='filter'></label>
+      <select id="filter" value={selectedRegion} onChange={handleFilterChange}>
         <option value="">Filter by Region</option>
 
         {regionOptions.map((region) => (
