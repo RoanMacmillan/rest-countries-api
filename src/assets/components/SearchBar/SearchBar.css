@@ -28,6 +28,7 @@
   font-size: 12px;
   line-height: 20px;
   color: #111517;
+  height: 100%;
 }
 
 .searchBar input:focus {
