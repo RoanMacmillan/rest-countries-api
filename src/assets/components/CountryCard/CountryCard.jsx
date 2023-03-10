@@ -20,15 +20,15 @@ const CountryCard = ({ countries }) => {
 
           <div className="infoContainer">
             <h2>{country.name}</h2>
-            <span>
+            <p>
               Population: <p>{country.population}</p>
-            </span>
-            <span>
+            </p>
+            <p>
               Region: <p>{country.region}</p>
-            </span>
-            <span>
+            </p>
+            <p>
               Capital: <p>{country.capital}</p>
-            </span>
+            </p>
           </div>
         </div>
         </Link>
